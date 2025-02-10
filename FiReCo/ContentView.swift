@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showNewFeature = false
+    @StateObject var remoteConfigManager = appSingletons.remoteConfigManager
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if remoteConfigManager.newTentativeFeatureFlag {
+                Text("New Feature is Enabled!")
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+            } else {
+                Text("New Feature is Disabled.")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+            }
         }
-        .padding()
     }
 }
 

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		291EE8882D5A555700AFDD78 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 291EE8872D5A555700AFDD78 /* FirebaseCore */; };
+		291EE88A2D5A555700AFDD78 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 291EE8892D5A555700AFDD78 /* FirebaseRemoteConfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		291EE8732D5A48B800AFDD78 /* FiReCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiReCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291EE8882D5A555700AFDD78 /* FirebaseCore in Frameworks */,
+				291EE88A2D5A555700AFDD78 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = FiReCo;
 			packageProductDependencies = (
+				291EE8872D5A555700AFDD78 /* FirebaseCore */,
+				291EE8892D5A555700AFDD78 /* FirebaseRemoteConfig */,
 			);
 			productName = FiReCo;
 			productReference = 291EE8732D5A48B800AFDD78 /* FiReCo.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 291EE86A2D5A48B800AFDD78;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				291EE8862D5A555700AFDD78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 291EE8742D5A48B800AFDD78 /* Products */;
 			projectDirPath = "";
@@ -185,6 +197,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -240,6 +254,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -268,7 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jca.FiReCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jca.FiReCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -324,6 +340,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		291EE8862D5A555700AFDD78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		291EE8872D5A555700AFDD78 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291EE8862D5A555700AFDD78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		291EE8892D5A555700AFDD78 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291EE8862D5A555700AFDD78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 291EE86B2D5A48B800AFDD78 /* Project object */;
 }

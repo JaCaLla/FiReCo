@@ -1,23 +1,9 @@
 
 # NFCApp
-This repository contains a sample iOS application. The app implements a simple iOS app that reads and writes sample NDEF data on an NFC tag. This is the base code used in following posts [Harnessing NFC Technology in your iOS App](https://javios.eu/swift/harnessing-nfc-technology-in-your-ios-app/) and  [iOS NFC Development: From URLs to Deeplinks](https://javios.eu/uncategorized/ios-nfc-development-from-urls-to-deeplinks/) 
-
-
-## 🎥 Demo Video
-
+This repository contains a sample iOS application. The app implements a simple iOS app that reads a remote configuration value handled by FirebaseRemoteConfiguration, depending on the value UI changes This is the base code used in following posts [Boosting iOS App Flexibility with Firebase Remote Config](https://javios.eu/swift/harnessing-nfc-technology-in-your-ios-app/) 
 ### Check out the app in action!  
-![CombineAPIRrest Sample App review](media/review.gif)  
-[Youtube](https://youtu.be/KQC92SKTqRg)
+<img src="media/review.gif" style="width:800px; height:auto;">
 
-### Store a web link into NFC tag
-![Store a web link into NFC tag](media/NFC_Web1.gif)  
-[Youtube](https://youtu.be/T7no6VQmMas)
-
-
-### Store an app deeplink into NFC tag
-![Store an app deeplink into NFC tag](media/NFC_Deeplink.gif)
-
-[Youtube](https://youtu.be/hs2WM2gIMGU)
 
 ## Requirements
 
